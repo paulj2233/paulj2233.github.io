@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(255, 104, 147, .25)
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#bigheader {
+    text-align: center;
+}
+
+.contentHeader {
+    align-content: center;
+    font-family: 'Boogaloo';
+}
+
+.content {
+    align-content: flex-start;
+    text-align: justify;
+    width: 40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 20px;
+    font-family: 'Oxygen';
+    

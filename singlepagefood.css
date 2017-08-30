@@ -1,0 +1,59 @@
+.navbar{
+    display: inline-flex;
+    margin: 80px;
+    width: 100%;
+    height: 15%;
+    justify-content: space-evenly;
+    border: 1px solid yellow;
+}
+
+.navbaritem {
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    }
+
+
+
+#navBarLogo {
+    top: 5px;
+    left: 5px;
+    border: 1px solid red;
+    height: 100%;
+}
+
+#bigheader {
+    text-align: center;
+}
+
+.contentHeader {
+    align-content: center;
+    font-family: 'Boogaloo';
+}
+
+.content {
+    align-content: flex-start;
+    text-align: justify;
+    width: 40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 20px;
+    font-family: 'Oxygen';
+    
+}
+
+body{
+    background-color:rgba(140, 255, 143, .5);
+}
+
+h3{
+    
+    position: relative;
+    position: top;
+        
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

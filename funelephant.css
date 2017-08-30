@@ -1,0 +1,47 @@
+h2{
+    
+    font-family: 'Cinzel', serif;
+    align-content: center;
+    display: inline-block;
+    
+}
+
+body{
+    background-color: rgba(51, 235, 255, .25);
+    border: 1px solid black;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#interestingFacts {
+    background-color: rgba(92, 115, 153, .5); 
+    width: 40%;
+    border: 1px solid black;
+}
+
+#physical{
+    background-color: rgba(20, 90, 204, .5);
+     width: 40%;
+    border: 1px solid black;
+}
+
+#behavior{
+    background-color: rgba(204, 44, 20, .5);
+     width: 40%;
+    border: 1px solid black;
+}
+
+#habitat{
+    background-color: rgba(255, 153, 115, .5) ;
+    width: 40%;
+    border: 1px solid black;
+}
+
+img {
+    width: 40%;
+}
+
+div {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,41 @@
+body{
+    background-color:beige;
+}
+
+h3{
+    color: #2556B2;
+}
+
+h5{
+    color: #B27A00;
+}
+
+img{
+    height:250px;
+    width: 250px;
+    
+}
+
+.stockscontainer {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+
+}
+
+.bondscontainer {
+    background-color: antiquewhite;
+    display: flex;
+    
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
