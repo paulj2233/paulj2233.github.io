@@ -1,15 +1,37 @@
+.navbar{
+    display: inline-flex;
+    margin: 80px;
+    width: 100%;
+    height: 15%;
+    justify-content: space-around;
+}
+
+.navbaritem {
+    justify-content: space-evenly;
+  }
+
+
+
+#navBarLogo {
+    top: 5px;
+    left: 5px;
+    height: 100%;
+}
+
 body{
     background-color: rgba(255, 104, 147, .25)
 }
 
 img{
-    width: 25%;
-    height: 25%;
+    width: vw10;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: yellow;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h3{

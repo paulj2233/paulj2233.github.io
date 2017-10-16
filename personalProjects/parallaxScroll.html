@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    body{
+        background-color: black;
+    }
+    
+    #parallax1 {
+    /* The image used */
+    background-image: url("http://ak8.picdn.net/shutterstock/videos/7040218/thumb/1.jpg");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+    #parallax2 {
+    /* The image used */
+    background-image: url("http://www.cruise-international.com/wp-content/uploads/2015/11/AWL_HMS367046.png");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+    
+    #parallax3 {
+    /* The image used http://www.blog.visitgreece.gr/wp-content/uploads/2016/05/1.png */
+    background-image: url("https://lph5i1b6c053kq7us26bdk75-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/facts-about-greece.jpg");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+    #parallax4 {
+    /* The image used */
+    background-image: url("https://awanderlustfullife.files.wordpress.com/2016/12/burano.png");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+
+    .card{
+        height: 20vh;
+        width: 15vw;
+        display: inline-block;
+        margin-left: 13vw;
+        margin-top: 2vh;
+    }
+    
+    .imageCard {
+    width: 15vw;
+    height: 20vh;
+    opacity: .7;
+    transform-style: preserve-3d;
+        transform: translateZ(-5px) scale(1);
+    }
+    
+    h1{
+        
+        text-align: center;
+        line-height: 20vh;
+        font-size: 20vh;
+        vertical-align: middle;
+        opacity: .6
+        
+    }
+    
+    
+    .c{
+        display: inline-block;
+        transform-style: preserve-3d;
+        width: 15vw;
+        height: 20vh;
+        position: relative;
+        box-sizing: border-box;
+        color: white;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        transition: transform 2s;
+    }
+    
+    .flipOver{
+        transform: rotateX(180deg) rotate(180deg);
+        transform-origin: right;
+        }
+            
+    .front{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        background-size: cover;
+        }
+            
+    .back{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        transform: translateZ(-1px) rotateY(-180deg);
+        backface-visibility: hidden;
+        }
+    
+    .separator{
+        height: 25vh;
+    }
+            
+    </style>
+</head>
+    
+<body>
+
+    
+<div id="parallax1">
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://flags.fmcdn.net/data/flags/w580/jp.png">
+                </div>
+                <div class="back card">
+                    <p>Japan is made up of 6,852 islands.
+The highest point in Japan in Mount Fuji, which stands at 3,776m (12,388ft).</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://pngimg.com/uploads/sushi/sushi_PNG9267.png">
+                </div>
+                <div class="back card">
+                    <p>The earthquake of 1923 brought sushi off the streets
+Previously, sushi was exclusively a street food, but the devastation from the quake destroyed so much of Tokyo that real estate prices dropped, allowing sushi chefs to afford brick-and-mortar restaurants.</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png">
+                </div>
+                <div class="back card">
+                    <p> Japanese bears no relation to any other major language.
+
+Unlike English, which is closely tied to Romance (e.g., Spanish, French) and Germanic languages (e.g., German), Japanese is not closely related to any other major language. In fact, until recently, it was classified as a language isolate, meaning that it is completely unique among all current world languages. Since then, linguists have found common roots between Japanese and Ryukyuan languages, which are indigenous languages spoken in southern Japan.</p>
+                </div>
+    </div>
+    
+   
+        <h1>Japan</h1>
+</div> 
+    
+    
+<div class="separator"></div>
+    
+    
+<div id="parallax2">
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://hetalia.kitawiki.net/images/thumb/c/c3/Flag_of_France.svg/800px-Flag_of_France.svg.png">
+                </div>
+                <div class="back card">
+                    <p>France has the highest number of Nobel Prize In Literature winners of any country, with 15 (followed by the United States with 11, and the UK with 10).</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://crepelb.com/wp-content/uploads/2015/08/crepe-dough-1024x689.png">
+                </div>
+                <div class="back card">
+                    <p>Auguste Escoffier. The Crêpe Suzette was invented in 1903 by the “king” of French chefs, Escoffier, and for the first two decades of the 1900s was considered to be the ultimate in luxury desserts. It is prepared with 'beurre Suzette', a melted butter-based sauce with caramelized sugar, juice of orange and tangerine, with the addition of Curaçao or Grand Marnier liquor.</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="https://janamerheb.files.wordpress.com/2016/02/logo-bonjour.png">
+                </div>
+                <div class="back card">
+                    <p>The French doesn’t use the letter “W”
+The only time you’ll see the letter “W” in French is if it is a foreign word.</p>
+                </div>
+    </div>
+    
+   
+        <h1>France</h1>
+</div>
+
+    
+<div class="separator"></div>
+    
+    
+<div id="parallax3">
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://www.onlygfx.com/wp-content/uploads/2016/08/flag-of-greece.png">
+                </div>
+                <div class="back card">
+                    <p>According to Greece: Enchantment of the World written by Ann Heinrichs, Greece enjoys on average more than 250 days of sunshine—or three thousand sunny hours—a year, which makes it one of the most sunny countries in the world and the most sunny in Europe.</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="https://2b9sqw2iiqxr36ntqa1exnal-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/17-gyro.png">
+                </div>
+                <div class="back card">
+                    <p>In spite of its popularity, the Gyro is one of the most mispronounced of any food item, being pronounced “jee-ros”, “jai-ros” or “gee-ros”when the correct Greek pronunciation is ‘Yeh-ro”. There is no true letter G, in the English sense, in the Greek language and the Greek letter gamma is pronounced “yeh”.</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://thomasbiasgraphicdesign.com/Greek-Hello.gif">
+                </div>
+                <div class="back card">
+                    <p>Greek has been spoken for more than 3,000 years, making it one of the oldest languages in Europe. Almost every English word that starts with “ph” is rooted in Greek. That includes: physics, philosophy, photo, phrase, phoneme, phobia, philanthropy etc.</p>
+                </div>
+    </div>
+    
+   
+        <h1>Greece</h1>
+</div>
+    
+
+<div class="separator"></div> 
+    
+    
+<div id="parallax4">
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://img.freeflagicons.com/thumb/square_flag_pin/denmark/denmark_640.png">
+                </div>
+                <div class="back card">
+                    <p>The UN World Happiness Report has rated Danes as the happiest people on earth two years in a row. 50% of Copenhageners commute to work every day on bicycle -  come rain come shine.
+                    Denmark doesn't have bike lanes, they have special elevated roads for bicycles!</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="https://i.pinimg.com/originals/f9/23/e2/f923e2f14f94a2c7660ca837132ccae3.jpg">
+                </div>
+                <div class="back card">
+                    <p>Smørrebrød is now sold everywhere—from some of the best restaurants in Denmark to its street vendors. The basic idea behind the open-faced sandwich? A mixture of delicious ingredients piled high atop a single thick slice of bread (typically rye, chosen for its density), which is buttered to keep the juices of the toppings from sinking through the bread.</p>
+                </div>
+    </div>
+    
+    <div class="c">
+                <div class="front card">
+                    <img class="imageCard" src="http://hejstyle.com/wp-content/uploads/2014/02/hej.png">
+                </div>
+                <div class="back card">
+                    <p>The Danish language has no word for "please".</p>
+                </div>
+    </div>
+    
+   
+        <h1>Denmark</h1>
+</div>
+
+
+<div class="separator"></div>
+    
+            
+      <script
+          src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+          crossorigin="anonymous"></script>
+        <script>
+            $(".c").click(function(){
+                $(this).toggleClass("flipOver");
+            });
+        </script>
+
+
+</body>
+</html>

@@ -1,9 +1,76 @@
-h2{
+
+#menu{
+    display: block;
+    margin: 0;
+    margin-bottom: 5vh;
+    padding: 0;
+    height: 15vh;
+    background-color: rgba(226, 235, 242, .5)
+}
+
+li{
+    display: inline-block;
+    margin-left: 15vw;
+    align-content: center;
+    vertical-align: middle;
+    line-height: 15vh;
+}
+
+#icon{
+    width: 15vw;
+    position: absolute;
+    opacity: .5;
+    left: 17vw;
+    top: 31vh;
+    animation-name: iconMove;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+
+
+.slides{
+    display: none;
+}
+
+@keyframes fontChange {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:rgba(92, 115, 153, .5); left:200px; top:0px;}
+    50%  {color:rgba(20, 90, 204, .9); left:200px; top:200px;}
+    75%  {color:rgba(204, 44, 20, .5); left:0px; top:200px;}
+    100% {color:rgba(255, 153, 115, .7); left:0px; top:0px;}
+}
+
+@keyframes iconMove {
+    0%  {left: -25px; top:-25px;}
+    25% {left: 4vw; top:8vh;}
+    50% {left: 8vw; top:16vh;}
+    75% {left: 12vw; top:24vh;}
+    100% {left: 17vw; top: 31vh;}
+        
+}
+
+h1{
     
+    position: absolute;
+    left: 2vw;
+    top: 40vh;
+    font-size: 15vh;
+    animation-name: fontChange;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    opacity: .5;
+    
+}
+
+h2{
     font-family: 'Cinzel', serif;
     align-content: center;
     display: inline-block;
-    
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
 }
 
 body{
@@ -14,26 +81,57 @@ body{
 
 #interestingFacts {
     background-color: rgba(92, 115, 153, .5); 
-    width: 40%;
+    width: 35vw;
     border: 1px solid black;
+    margin-left: 5vw;
+    transition: color 1.5s, transform 2s;
+}
+
+#interestingFacts:hover{
+    color: white;
+    
 }
 
 #physical{
     background-color: rgba(20, 90, 204, .5);
-     width: 40%;
+    width: 35vw;
     border: 1px solid black;
+    margin-left: 5vw;
+    transition: color 1.5s, transform 1.5s;
+    }
+
+#physical:hover{
+    color: white;
+    
+    
 }
 
 #behavior{
     background-color: rgba(204, 44, 20, .5);
-     width: 40%;
+    width: 35vw;
     border: 1px solid black;
+    margin-left: 5vw;
+    transition: color 1.5s, transform 2s;
+    }
+
+#behavior:hover{
+    color: white;
+    
+    
 }
 
 #habitat{
     background-color: rgba(255, 153, 115, .5) ;
-    width: 40%;
+    width: 35vw;
     border: 1px solid black;
+    margin-left: 5vw;
+    transition: color 1.5s, transform 2s;
+    }
+
+#habitat:hover{
+    color: white;
+    
+    
 }
 
 img {

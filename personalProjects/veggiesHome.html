@@ -1,0 +1,179 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            #navLogo{
+            height: 15vh;
+            width: auto;
+            opacity: 0.5;
+        }
+        #menu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 15vh;
+            background-color: rgba(226, 235, 242, .5)
+            
+        }
+        
+        #menu li{
+            float: left;
+            height: 15vh;
+            line-height: 15vh;
+        }
+        
+        #menu li a{
+           display: block;
+            padding: 0 5vh;
+            color: rgba(80, 80, 80, .8);
+            text-decoration: none;
+        }
+        
+        #menu li a:hover {  
+            background-color: rgba(198, 111, 107, .5);  
+            text-decoration:none;  
+        }  
+        
+            #footer{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 15vh;
+            background-color: rgba(226, 235, 242, .5)
+            
+        }
+        
+        #footer li{
+            float: left;
+            height: 15vh;
+            line-height: 15vh;
+        }
+        
+        #footer li a{
+           display: block;
+            padding: 0 5vh;
+            color: rgba(80, 80, 80, .8);
+            text-decoration: none;
+        }
+        
+        #footer li a:hover {  
+            background-color: rgba(198, 111, 107, .5);  
+            text-decoration:none;  
+        }  
+            
+            
+            div{
+                display: inline-block;
+                height: 17vh;
+                width: 24vw;
+                line-height: 17vh;
+                text-align: center;
+                font-size: 8vh;
+                background-color: white;
+                border: 1px solid black;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            
+            .link{
+                text-decoration: none;
+            }
+            
+            .name{
+                text-align: center;
+                font-size: 8vh;
+                color: black;
+            }
+            
+            
+        </style>
+    
+    </head>
+    <body>
+        
+        <ul id="menu">
+            <li><a href="singlepagefoodhome.html" ><img src="http://sunshine-action.org/getinvolved/Veggies2.png" id="navLogo"/></a></li>
+            <li><a href="recipeshome.html" class="navbaritem">RECIPES</a></li>
+            <li><a href="fruitshome.html" class="navbaritem">FRUITS</a></li>
+            <li><a href="veggieshome.html" class="navbaritem">VEGGIES</a></li> 
+        </ul>
+        
+        
+        <div><span class="name">Asparagus</span></div>
+        <div><span class="name"><a href="singleFoodCucumber.html" class="link">Cucumber</a></span></div>
+        <div><span class="name">Tomato</span></div>
+        <div><span class="name">Brocolli</span></div>
+        <div><span class="name">Carrot</span></div>
+        <div><span class="name">Garlic</span></div>
+        <div><span class="name">Corn</span></div>
+        <div><span class="name">GreenBean</span></div>
+        <div><span class="name">Lettuce</span></div>
+        <div><span class="name">Squash</span></div>
+        <div><span class="name">Mushroom</span></div>
+        <div><span class="name">Onion</span></div>
+        <div><span class="name">Peas</span></div>
+        <div><span class="name">Spinach</span></div>
+        <div><span class="name">Potato</span></div>
+        <div><span class="name">Squash</span></div>
+        
+        <ul id="footer">
+            <li><a href="paulyj6131@gmail.com">Contact us</a></li>
+        <li><a>About us</a></li>
+<li><a>Our Work</a></li>
+<li><a>FAQ</a></li>
+<li><a>Top of Page</a></li>
+        </ul>
+    
+        
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+        
+    </script>
+        
+    <script>  
+        
+                    function randomNumber(start, end){
+                //figure out range of start to end
+                var range = Math.abs(end-start);
+                //run code to generate random number
+                var answer = parseInt(Math.random() * range + start);
+                //return random number
+                return answer;
+            }
+        
+                   function randomColor(){
+                //random number from 0-255
+                    //red
+                    //green
+                    //blue
+                var red = randomNumber(0, 255);
+                var green = randomNumber(0, 255);
+                var blue = randomNumber(0, 255);
+                //build css value to return: "rgb(##, ##, ##)"
+                return "rgb("+red+", "+green+", "+blue+")";
+                   }
+        
+                  var timeoutId = setInterval(function(){
+                $(".name").each(function(){
+                    $(this).css("color", randomColor());
+                
+                    var maxLeft = $(document).width() - $(this).width();
+                    var newLeft = randomNumber(0, maxLeft);
+                    $(this).css("left", newLeft);
+
+                    var maxTop = $(document).height() - $(this).height();
+                    var newTop = randomNumber(0, maxTop);
+                    $(this).css("top", newTop);
+                })
+            }, 1000);
+                                  
+                                  
+    </script>
+    </body>
+
+
+</html>
